@@ -19,5 +19,16 @@ function deletePromo() {
     });
 };
 
-deletePromo()
+deletePromo();
+
+// 2) Изменить жанр фильма, поменять "комедия" на "драма"
+
+const newGenre = 'ДРАМА';
+
+function changeGenres(genre) {
+    const promoGenres = document.querySelector('.promo__genre');
+    promoGenres.textContent = genre;
+};
+
+changeGenres(newGenre);
 
