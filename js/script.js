@@ -99,7 +99,7 @@ function addElemToList() {
 function start () {
     deletePromo();
     changeGenres(newGenre);
-    promoBg.style.backgroundImage = 'url(../img/bg.jpg)';
+    promoBg.style.backgroundImage = 'url(img/bg.jpg)';
     addElemToList()
 };
 
