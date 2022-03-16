@@ -37,3 +37,16 @@ changeGenres(newGenre);
 
 const promoBg = document.querySelector('.promo__bg');
 promoBg.style.backgroundImage = 'url(../img/bg.jpg)';
+
+/* 4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+Отсортировать их по алфавиту  */
+
+let promoInteractiveItem = document.querySelectorAll('.promo__interactive-item');
+
+movieDB.movies.sort();
+
+promoInteractiveItem.forEach((element, index) => {
+    element.textContent = movieDB.movies[index];
+});
+
+
