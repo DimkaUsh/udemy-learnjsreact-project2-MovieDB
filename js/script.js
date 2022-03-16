@@ -32,3 +32,8 @@ function changeGenres(genre) {
 
 changeGenres(newGenre);
 
+/* 3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
+Реализовать только при помощи JS */
+
+const promoBg = document.querySelector('.promo__bg');
+promoBg.style.backgroundImage = 'url(../img/bg.jpg)';
