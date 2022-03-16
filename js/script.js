@@ -45,6 +45,12 @@ let promoInteractiveItem = document.querySelectorAll('.promo__interactive-item')
 
 movieDB.movies.sort();
 
+// 5) Добавить нумерацию выведенных фильмов
+
+for (let i = 0 ; i < movieDB.movies.length ; i++) {
+    movieDB.movies[i] = `${i+1}. ${movieDB.movies[i]}`;
+};
+
 promoInteractiveItem.forEach((element, index) => {
     element.textContent = movieDB.movies[index];
 });
